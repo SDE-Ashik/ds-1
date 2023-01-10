@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+int b[100], arr[10]={10,20,30,40,50},i,n,f,key;
+printf("enter the size of the array");
+scanf("%d",&n);
+printf("enter the elements\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&b[i]);
+
+printf("\n %d",b[i]);}
+printf("enter the key");
+scanf("%d",&key);
+for(i=0;i<n;i++)
+{
+if(arr[i]==key)
+{
+f=i;
+break;
+}
+else
+{
+f=-1;
+}
+}
+if(f==i)
+{
+printf("the element is found in the array");
+}
+else
+{
+printf("not found");
+}
+}
